@@ -1,0 +1,11 @@
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\DataAccess\bin\Debug\Core.dll
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\DataAccess\bin\Debug\Entities.dll
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\DataAccess\bin\Debug\Core.pdb
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\DataAccess\bin\Debug\Entities.pdb
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\DataAccess\obj\Debug\DataAccess.pdb

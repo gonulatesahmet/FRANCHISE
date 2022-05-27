@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C97FFA55-6489-4B02-80F1-05D779FFF000}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Entities</RootNamespace>
+    <AssemblyName>Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Concrete\Appellation.cs" />
+    <Compile Include="Concrete\Area.cs" />
+    <Compile Include="Concrete\Auth.cs" />
+    <Compile Include="Concrete\Branch.cs" />
+    <Compile Include="Concrete\BranchDiscount.cs" />
+    <Compile Include="Concrete\BranchDiscountContent.cs" />
+    <Compile Include="Concrete\BranchDiscountContentBranchProduct.cs" />
+    <Compile Include="Concrete\BranchProduct.cs" />
+    <Compile Include="Concrete\Category.cs" />
+    <Compile Include="Concrete\Combobox\CbbAppellation.cs" />
+    <Compile Include="Concrete\Combobox\CbbArea.cs" />
+    <Compile Include="Concrete\Combobox\CbbAuth.cs" />
+    <Compile Include="Concrete\Combobox\CbbBranch.cs" />
+    <Compile Include="Concrete\Combobox\CbbBranchDiscount.cs" />
+    <Compile Include="Concrete\Combobox\CbbBranchDiscountContent.cs" />
+    <Compile Include="Concrete\Combobox\CbbBranchProduct.cs" />
+    <Compile Include="Concrete\Combobox\CbbCategory.cs" />
+    <Compile Include="Concrete\Combobox\CbbDiscount.cs" />
+    <Compile Include="Concrete\Combobox\CbbEmployee.cs" />
+    <Compile Include="Concrete\Combobox\CbbProduct.cs" />
+    <Compile Include="Concrete\Combobox\CbbTable.cs" />
+    <Compile Include="Concrete\Combobox\CbbTypeOfDevice.cs" />
+    <Compile Include="Concrete\Combobox\CbbTypeOfDiscount.cs" />
+    <Compile Include="Concrete\Combobox\CbbTypeOfOrder.cs" />
+    <Compile Include="Concrete\Combobox\CbbTypeOfPayment.cs" />
+    <Compile Include="Concrete\Combobox\CbbTypeOfProduct.cs" />
+    <Compile Include="Concrete\Device.cs" />
+    <Compile Include="Concrete\Discount.cs" />
+    <Compile Include="Concrete\Employee.cs" />
+    <Compile Include="Concrete\Institution.cs" />
+    <Compile Include="Concrete\Order.cs" />
+    <Compile Include="Concrete\Page.cs" />
+    <Compile Include="Concrete\PageAuth.cs" />
+    <Compile Include="Concrete\Payment.cs" />
+    <Compile Include="Concrete\Product.cs" />
+    <Compile Include="Concrete\Session.cs" />
+    <Compile Include="Concrete\Table.cs" />
+    <Compile Include="Concrete\TypeOfDevice.cs" />
+    <Compile Include="Concrete\TypeOfDiscount.cs" />
+    <Compile Include="Concrete\TypeOfOrder.cs" />
+    <Compile Include="Concrete\TypeOfPayment.cs" />
+    <Compile Include="Concrete\TypeOfProduct.cs" />
+    <Compile Include="DTOs\AreaDto.cs" />
+    <Compile Include="DTOs\BranchDiscountContentBranchProductDto.cs" />
+    <Compile Include="DTOs\BranchDiscountContentDto.cs" />
+    <Compile Include="DTOs\BranchDiscountDto.cs" />
+    <Compile Include="DTOs\BranchProductDto.cs" />
+    <Compile Include="DTOs\DeviceDto.cs" />
+    <Compile Include="DTOs\DiscountDto.cs" />
+    <Compile Include="DTOs\EmployeeDto.cs" />
+    <Compile Include="DTOs\OrderDto.cs" />
+    <Compile Include="DTOs\PageAuthDto.cs" />
+    <Compile Include="DTOs\PaymentDto.cs" />
+    <Compile Include="DTOs\ProductDto.cs" />
+    <Compile Include="DTOs\TableDto.cs" />
+    <Compile Include="Enums\OrderStateEnum.cs" />
+    <Compile Include="Enums\ProductSortEnum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstract\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{CE70D906-2A9F-42A0-BAE8-C78970FFCDFF}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B18D5B8-AF72-4571-93C5-2371BD7BAB8B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WinForms_UI</RootNamespace>
+    <AssemblyName>WinForms_UI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Device1\Appellation\FormAppellation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Appellation\FormAppellation.Designer.cs">
+      <DependentUpon>FormAppellation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Appellation\FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Appellation\FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Area\FormArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Area\FormArea.Designer.cs">
+      <DependentUpon>FormArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Area\FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Area\FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Auth\FormAuth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Auth\FormAuth.Designer.cs">
+      <DependentUpon>FormAuth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Auth\FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Auth\FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\BranchDiscountContentBranchProduct\FormBranchDiscountContentBranchProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\BranchDiscountContentBranchProduct\FormBranchDiscountContentBranchProduct.Designer.cs">
+      <DependentUpon>FormBranchDiscountContentBranchProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\BranchDiscountContentBranchProduct\FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\BranchDiscountContentBranchProduct\FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\BranchDiscountContent\FormBranchDiscountContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\BranchDiscountContent\FormBranchDiscountContent.Designer.cs">
+      <DependentUpon>FormBranchDiscountContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\BranchDiscountContent\FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\BranchDiscountContent\FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\BranchDiscount\FormBranchDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\BranchDiscount\FormBranchDiscount.Designer.cs">
+      <DependentUpon>FormBranchDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\BranchDiscount\FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\BranchDiscount\FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\BranchProduct\FormBranchProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\BranchProduct\FormBranchProduct.Designer.cs">
+      <DependentUpon>FormBranchProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\BranchProduct\FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\BranchProduct\FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Branch\FormBranch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Branch\FormBranch.Designer.cs">
+      <DependentUpon>FormBranch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Branch\FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Branch\FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Category\FormCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Category\FormCategory.Designer.cs">
+      <DependentUpon>FormCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Category\FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Category\FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Device\FormDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Device\FormDevice.Designer.cs">
+      <DependentUpon>FormDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Device\FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Device\FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Discount\FormDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Discount\FormDiscount.Designer.cs">
+      <DependentUpon>FormDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Discount\FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Discount\FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Employee\FormEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Employee\FormEmployee.Designer.cs">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Employee\FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Employee\FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Institution\FormInstitution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Institution\FormInstitution.Designer.cs">
+      <DependentUpon>FormInstitution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Page\FormPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Page\FormPage.Designer.cs">
+      <DependentUpon>FormPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\TypeOfProduct\FormTypeOfProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\TypeOfProduct\FormTypeOfProduct.Designer.cs">
+      <DependentUpon>FormTypeOfProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\TypeOfProduct\FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\TypeOfProduct\FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device2\BranchGeneralReport\FormBranchGeneralReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device2\BranchGeneralReport\FormBranchGeneralReport.Designer.cs">
+      <DependentUpon>FormBranchGeneralReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device2\Employee\FormEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device2\Employee\FormEmployee.Designer.cs">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device2\FormBranchMainMachine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device2\FormBranchMainMachine.Designer.cs">
+      <DependentUpon>FormBranchMainMachine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device2\FormEmployeeControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device2\FormEmployeeControl.Designer.cs">
+      <DependentUpon>FormEmployeeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device2\FormMoveTheTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device2\FormMoveTheTable.Designer.cs">
+      <DependentUpon>FormMoveTheTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device2\Payment\FormOrderDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device2\Payment\FormOrderDetail.Designer.cs">
+      <DependentUpon>FormOrderDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device2\Payment\FormPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device2\Payment\FormPayment.Designer.cs">
+      <DependentUpon>FormPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device2\Payment\FormPaymentDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device2\Payment\FormPaymentDetail.Designer.cs">
+      <DependentUpon>FormPaymentDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device2\Session\FormOrderDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device2\Session\FormOrderDetail.Designer.cs">
+      <DependentUpon>FormOrderDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device2\Session\FormSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device2\Session\FormSession.Designer.cs">
+      <DependentUpon>FormSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device2\Session\FormSessionDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device2\Session\FormSessionDetail.Designer.cs">
+      <DependentUpon>FormSessionDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Product\FormProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Product\FormProduct.Designer.cs">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Product\FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Product\FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Device1\Table\FormTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Table\FormTable.Designer.cs">
+      <DependentUpon>FormTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\Table\FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\Table\FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\TypeOfDevice\FormTypeOfDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\TypeOfDevice\FormTypeOfDevice.Designer.cs">
+      <DependentUpon>FormTypeOfDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\TypeOfPayment\FormTypeOfPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\TypeOfPayment\FormTypeOfPayment.Designer.cs">
+      <DependentUpon>FormTypeOfPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device1\TypeOfPayment\FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device1\TypeOfPayment\FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Device1\Appellation\FormAppellation.resx">
+      <DependentUpon>FormAppellation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Appellation\FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Area\FormArea.resx">
+      <DependentUpon>FormArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Area\FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Auth\FormAuth.resx">
+      <DependentUpon>FormAuth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Auth\FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\BranchDiscountContentBranchProduct\FormBranchDiscountContentBranchProduct.resx">
+      <DependentUpon>FormBranchDiscountContentBranchProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\BranchDiscountContentBranchProduct\FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\BranchDiscountContent\FormBranchDiscountContent.resx">
+      <DependentUpon>FormBranchDiscountContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\BranchDiscountContent\FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\BranchDiscount\FormBranchDiscount.resx">
+      <DependentUpon>FormBranchDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\BranchDiscount\FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\BranchProduct\FormBranchProduct.resx">
+      <DependentUpon>FormBranchProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\BranchProduct\FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Branch\FormBranch.resx">
+      <DependentUpon>FormBranch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Branch\FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Category\FormCategory.resx">
+      <DependentUpon>FormCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Category\FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Device\FormDevice.resx">
+      <DependentUpon>FormDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Device\FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Discount\FormDiscount.resx">
+      <DependentUpon>FormDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Discount\FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Employee\FormEmployee.resx">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Employee\FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Institution\FormInstitution.resx">
+      <DependentUpon>FormInstitution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Page\FormPage.resx">
+      <DependentUpon>FormPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\TypeOfProduct\FormTypeOfProduct.resx">
+      <DependentUpon>FormTypeOfProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\TypeOfProduct\FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device2\BranchGeneralReport\FormBranchGeneralReport.resx">
+      <DependentUpon>FormBranchGeneralReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device2\Employee\FormEmployee.resx">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device2\FormBranchMainMachine.resx">
+      <DependentUpon>FormBranchMainMachine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device2\FormEmployeeControl.resx">
+      <DependentUpon>FormEmployeeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device2\FormMoveTheTable.resx">
+      <DependentUpon>FormMoveTheTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device2\Payment\FormOrderDetail.resx">
+      <DependentUpon>FormOrderDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device2\Payment\FormPayment.resx">
+      <DependentUpon>FormPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device2\Payment\FormPaymentDetail.resx">
+      <DependentUpon>FormPaymentDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device2\Session\FormOrderDetail.resx">
+      <DependentUpon>FormOrderDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device2\Session\FormSession.resx">
+      <DependentUpon>FormSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device2\Session\FormSessionDetail.resx">
+      <DependentUpon>FormSessionDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Product\FormProduct.resx">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Product\FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Device1\Table\FormTable.resx">
+      <DependentUpon>FormTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\Table\FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\TypeOfDevice\FormTypeOfDevice.resx">
+      <DependentUpon>FormTypeOfDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\TypeOfPayment\FormTypeOfPayment.resx">
+      <DependentUpon>FormTypeOfPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device1\TypeOfPayment\FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{A79588FF-A0F5-45A2-8DA2-F3BDD265438B}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{CE70D906-2A9F-42A0-BAE8-C78970FFCDFF}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{6BA37002-20E5-4779-9EA9-B34B4699B305}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{C97FFA55-6489-4B02-80F1-05D779FFF000}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Device3\" />
+    <Folder Include="Device4\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

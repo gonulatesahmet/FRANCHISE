@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6BA37002-20E5-4779-9EA9-B34B4699B305}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccess</RootNamespace>
+    <AssemblyName>DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\IAppellationDal.cs" />
+    <Compile Include="Abstract\IAreaDal.cs" />
+    <Compile Include="Abstract\IAuthDal.cs" />
+    <Compile Include="Abstract\IBranchDal.cs" />
+    <Compile Include="Abstract\IBranchDiscountContentBranchProductDal.cs" />
+    <Compile Include="Abstract\IBranchDiscountContentDal.cs" />
+    <Compile Include="Abstract\IBranchDiscountDal.cs" />
+    <Compile Include="Abstract\IBranchProductDal.cs" />
+    <Compile Include="Abstract\ICategoryDal.cs" />
+    <Compile Include="Abstract\IDeviceDal.cs" />
+    <Compile Include="Abstract\IDiscountDal.cs" />
+    <Compile Include="Abstract\IEmployeeDal.cs" />
+    <Compile Include="Abstract\IInstitutionDal.cs" />
+    <Compile Include="Abstract\IOrderDal.cs" />
+    <Compile Include="Abstract\IPageAuthDal.cs" />
+    <Compile Include="Abstract\IPageDal.cs" />
+    <Compile Include="Abstract\IPaymentDal.cs" />
+    <Compile Include="Abstract\IProductDal.cs" />
+    <Compile Include="Abstract\ISessionDal.cs" />
+    <Compile Include="Abstract\ITableDal.cs" />
+    <Compile Include="Abstract\ITypeOfDeviceDal.cs" />
+    <Compile Include="Abstract\ITypeOfDiscountDal.cs" />
+    <Compile Include="Abstract\ITypeOfOrderDal.cs" />
+    <Compile Include="Abstract\ITypeOfPaymentDal.cs" />
+    <Compile Include="Abstract\ITypeOfProductDal.cs" />
+    <Compile Include="Concrete\Mssql\Connection.cs" />
+    <Compile Include="Concrete\Mssql\MsAppellationDal.cs" />
+    <Compile Include="Concrete\Mssql\MsAreaDal.cs" />
+    <Compile Include="Concrete\Mssql\MsAuthDal.cs" />
+    <Compile Include="Concrete\Mssql\MsBranchDal.cs" />
+    <Compile Include="Concrete\Mssql\MsBranchDiscountContentBranchProductDal.cs" />
+    <Compile Include="Concrete\Mssql\MsBranchDiscountContentDal.cs" />
+    <Compile Include="Concrete\Mssql\MsBranchDiscountDal.cs" />
+    <Compile Include="Concrete\Mssql\MsBranchProductDal.cs" />
+    <Compile Include="Concrete\Mssql\MsCategoryDal.cs" />
+    <Compile Include="Concrete\Mssql\MsDeviceDal.cs" />
+    <Compile Include="Concrete\Mssql\MsDiscountDal.cs" />
+    <Compile Include="Concrete\Mssql\MsEmployeeDal.cs" />
+    <Compile Include="Concrete\Mssql\MsInstitutionDal.cs" />
+    <Compile Include="Concrete\Mssql\MsOrderDal.cs" />
+    <Compile Include="Concrete\Mssql\MsPageAuthDal.cs" />
+    <Compile Include="Concrete\Mssql\MsPageDal.cs" />
+    <Compile Include="Concrete\Mssql\MsPaymentDal.cs" />
+    <Compile Include="Concrete\Mssql\MsProductDal.cs" />
+    <Compile Include="Concrete\Mssql\MsSessionDal.cs" />
+    <Compile Include="Concrete\Mssql\MsTableDal.cs" />
+    <Compile Include="Concrete\Mssql\MsTypeOfDeviceDal.cs" />
+    <Compile Include="Concrete\Mssql\MsTypeOfDiscountDal.cs" />
+    <Compile Include="Concrete\Mssql\MsTypeOfOrderDal.cs" />
+    <Compile Include="Concrete\Mssql\MsTypeOfPaymentDal.cs" />
+    <Compile Include="Concrete\Mssql\MsTypeOfProductDal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{CE70D906-2A9F-42A0-BAE8-C78970FFCDFF}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{C97FFA55-6489-4B02-80F1-05D779FFF000}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

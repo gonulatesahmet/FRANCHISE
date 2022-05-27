@@ -1,0 +1,6 @@
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\Core\bin\Debug\Core.dll
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\Core\bin\Debug\Core.pdb
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\Core\obj\Debug\Core.csproj.AssemblyReference.cache
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\Core\obj\Debug\Core.dll
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\Core\obj\Debug\Core.pdb

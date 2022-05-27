@@ -1,0 +1,9 @@
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\Entities\bin\Debug\Entities.dll
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\Entities\bin\Debug\Entities.pdb
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\Entities\bin\Debug\Core.dll
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\Entities\bin\Debug\Core.pdb
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\Entities\obj\Debug\Entities.csproj.AssemblyReference.cache
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\Entities\obj\Debug\Entities.csproj.CopyComplete
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\Entities\obj\Debug\Entities.dll
+C:\Users\GONULATES\Desktop\Belgeler\Calismalar\C# Layers\KafeOtomasyon\Entities\obj\Debug\Entities.pdb
